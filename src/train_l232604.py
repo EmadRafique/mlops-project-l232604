@@ -24,9 +24,7 @@ def load_data(path):
  
  
 def preprocess(df):
-    # Part 4 (feature-preprocessing branch) modifies THIS function,
-    # e.g. by adding normalization such as:
-    # df["area_sqft"] = (df["area_sqft"] - df["area_sqft"].mean()) / df["area_sqft"].std()
+    df["area_sqft"] = (df["area_sqft"] - df["area_sqft"].mean()) / df["area_sqft"].std()
     X = df.drop(columns=["price"])
     y = df["price"]
     return X, y
