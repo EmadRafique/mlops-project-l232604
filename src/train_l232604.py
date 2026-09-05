@@ -13,7 +13,8 @@ MODEL_PATH = os.path.join(MODEL_DIR, "house_price_model.pkl")
 
 N_ESTIMATORS = 100
 RANDOM_STATE = 42
- 
+LEARNING_RATE = 0.1
+
  
 def load_data(path):
     print(f"[INFO] Loading dataset from {path} ...")
