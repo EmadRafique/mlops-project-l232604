@@ -1,0 +1,26 @@
+# Raw data — never commit datasets
+data/
+
+# Trained model artifacts
+model/
+*.pkl
+*.joblib
+*.h5
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
